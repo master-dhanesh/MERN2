@@ -9,27 +9,36 @@ html, body {
     height: 100%;
 }
 
-body {
-    font-size: 50px;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-/* measurements */
-/* px % em rms vw vh vmax vmin */
-/* color */
-/* color name, hex code, rgb, rgba */
+/* Box Model */
 
-h1 {
-    font-size: 1em;
+#box1 {
+    width: 200px;
+    height: 200px;
+    /* outline: 5px solid green; */
+    /* background-clip: border-box; */
+    /* padding: 5px 10px 15px 30px; */
+    padding: 40px;
+    /* padding-top: 40px; */
+    /* margin: 10px; */
+    /* border: 5px solid rgba(0, 0, 255, 0.212); */
+    /* border-left: 6px dashed green; */
+    /* border-right: 6px dotted green; */
+    /* border-bottom: 6px double yellow; */
+    background-color: red;
+    /* border-image: url("/Sheryians\ brand\ logo.png"); */
+    /* border-image-repeat: 10; */
+    /* border-radius: 50%; */
+    /* border-top-left-radius: 10px; */
 }
 
-p {
-    font-size: .5em;
-}
-
-div {
-    width: 10%;
-    height: 10%;
-    /* background-color: rgba(255, 0,0,0); */
-    /* background-color: #cdcdcd; */
-    background-color: black;
+#box2 {
+   
+    background-color: green;
 }
