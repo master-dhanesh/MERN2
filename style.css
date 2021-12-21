@@ -13,95 +13,99 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.page1 {
+.page1{
     position: relative;
     width: 100%;
     height: 100%;
-    /* background-image: url(./bg1.jpg); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    /* background-color: green; */
 }
+
+.bg-overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay-left{
+    background-color: rgb(49, 48, 59);
+    width: 40%;
+    height: 100%;
+}
+
+.overlay-right{
+    background-image: url(./bg1.jpg);
+    width: 60%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ---------------------------------------------------------------- */
 
 nav {
     width: 100%;
     height: 15%;
-    padding: 1%;
+    /* background-color: black; */
+    color: white;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.432);
-}
-
-nav > img {
-    height: 70px
+    padding: 0 5%;
 }
 
 nav > ul {
     list-style: none;
     display: flex;
-    color: white;
 }
+
 nav > ul > li {
     padding: 0 20px;
-    font-weight: 600;
-    cursor: pointer;
-    /* transition: .5s all; */
 }
 
-/* nav > ul > li:hover {
-    transform: skew(10deg, 5deg);
-} */
+/* ------------------------------------------------------------- */
 
 header {
+    color: #fff;
     width: 100%;
     height: 85%;
-    color: white;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5%;
 }
 
-header > div {
-    text-align: center;
+.center-box button {
+    margin: 1% 0 0 2%;
 }
 
-header  p {
-    font-weight: 900;
-    letter-spacing: 5px;
+.content {
+    width: 40%;
+    padding-left: 2%;
+    border-left: 5px solid white;
 }
 
-header  h1 {
-    font-weight: 900;
-    font-size: 50px;
-    margin: 2% 0;
+.content > p {
+    width: 70%;
 }
 
-header button {
-    padding: 3% 3.5%;
-    font-size: 18px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    cursor: pointer;
-    /* transition: all .5s; */
+.content > h1 {
+    
+    font-size: 80px;
 }
 
-/* header button:hover { 
-    background-color: white;
-    color: black; 
-} */
-
-.video-cover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    /* filter: brightness(80%); */
-    overflow: hidden;
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
 }
 
-.video-cover > video {
-    width: 100%;
+footer > a {
+    text-decoration: none;
+    margin-left: 1%;
 }
+
