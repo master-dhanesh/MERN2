@@ -14,9 +14,10 @@ body {
 }
 
 .page1 {
+    position: relative;
     width: 100%;
     height: 100%;
-    background-image: url(./bg1.jpg);
+    /* background-image: url(./bg1.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -87,7 +88,20 @@ header button {
     /* transition: all .5s; */
 }
 
-/* header button:hover { */
+/* header button:hover { 
     background-color: white;
-    color: black;
+    color: black; 
+} */
+
+.video-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* filter: brightness(80%); */
+    overflow: hidden;
+}
+
+.video-cover > video {
+    width: 100%;
 }
