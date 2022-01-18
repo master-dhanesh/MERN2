@@ -1,71 +1,21 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
+html , body {
     width: 100%;
     height: 100%;
-    font-family: "Gilroy";
+}
+/* % - vw vh */
+
+div {
+  width: 50vmax;
+  height: 50vmax;
+  background-color: red;
 }
 
-section {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    color: #fff;
-}
-
-video {
-    position: absolute;
-    top: 0;
-    height: 115%;
-    z-index: -1;
-}
-
-.circle {
-    margin: 1vmax;
-    width: 10vmax;
-    height: 10vmax;
-    border: 5px solid white;
-    /* border-radius: 50%; */
-    position: absolute;
-    animation: move 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite both;
-}
-
-
-@keyframes move {
-    0% {
-        top: 0;
-        left: 0;
-    } 25% {
-        top: 0;
-        left: 80%;
-    } 50% {
-        top:80%;
-        left: 80%;
-    } 75% {
-        top: 80%;
-        left: 0;
-    } 100% {
-        top: 0;
-        left: 0;
-    }
-}
-
-
-.content {
-    width: 50vmax;
-    font-size: 20px;
-}
-
-.content > h1 {
-    font-size: 1rem;
-}
-
-.content > p {
-    font: 500 2vmax "Roboto";
+h1 {
+  font-size: 10vmax;
 }
