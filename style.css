@@ -4,18 +4,71 @@
     box-sizing: border-box;
 }
 
-html , body {
+html, body {
     width: 100%;
     height: 100%;
 }
-/* % - vw vh */
 
-div {
-  width: 50vmax;
-  height: 50vmax;
-  background-color: red;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
 }
 
-h1 {
-  font-size: 10vmax;
+.myContainer {
+    width: 30vw;
+    height: 70vh;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.myheader{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.myheader > button {
+    width: 50%;
+    height: 100%;
+    font: 500 1.1vmax "Roboto";
+    background-color: transparent;
+    border: none;
+}
+
+.borderbottom {
+    border-bottom: 3px solid tomato !important;
+}
+
+.mysignupbtn{
+    background-color: tomato;
+    color: #fff;
+    font: 500 1.1vmax "Roboto";
+    transition: all .5s;
+}
+
+.mysignupbtn:hover {
+    background-color: rgb(228, 87, 62);
+}
+
+
+.myForm {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    width: 200%;
+    height: 90%;
+}
+
+.signinform,
+.signupform {
+    width: 50% !important;
+}
+
+.myForm {
+    transform: translate(0%, 0);
+    transition: all .25s;
 }
