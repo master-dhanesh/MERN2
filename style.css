@@ -1,91 +1,123 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100vw;
-    min-height: 100vh;
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
     overflow-x: hidden;
 }
 
-.first, .second {
-    height: 100vh;
+.one {
     width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top right, rgb(134, 110, 165), rgb(47, 51, 88) 100%, rgb(35, 89, 151));
+}
+
+nav {
+    width: 80vw;
+    margin: auto;
+    height: 10vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgb(243, 243, 243);
-    position: relative;
-}
-
-.myContainer {
-    width: 30vw;
-    height: 70vh;
-    background-color: white;
-    overflow: hidden;
-
-}
-
-.myheader{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-}
-
-.myheader > button {
-    width: 50%;
-    height: 100%;
-    font: 500 1.1vmax "Roboto";
-    background-color: transparent;
-    border: none;
-}
-
-.borderbottom {
-    border-bottom: 3px solid tomato !important;
-}
-
-.mysignupbtn{
-    background-color: tomato;
     color: #fff;
-    font: 500 1.1vmax "Roboto";
-    transition: all .5s;
 }
 
-.mysignupbtn:hover {
-    background-color: rgb(228, 87, 62);
+nav h1 {
+    font: 100 2vmax cursive
 }
 
-
-.myForm {
+nav ul {
     display: flex;
-    justify-content: center;
-    /* flex-wrap: wrap; */
-    width: 200%;
-    height: 90%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
-.signinform,
-.signupform {
-    width: 50% !important;
-}
-
-.myForm {
-    transform: translate(0%, 0);
+nav li {
+    cursor: pointer;
+    margin: 0 1vmax;
+    font: 400 1vmax "Gilroy";
+    color: rgb(240, 240, 240);
     transition: all .25s;
 }
 
-.second > h1 {
-    font: 900 5vmax "Gilroy";
-    color: rgb(250, 249, 249);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+nav li:hover:not(.libtn) {
+    color: #fff;
+    font-weight: 500;
 }
 
-.second > img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -20%) rotateY(180deg);
+nav .libtn {
+    padding: .8vmax 1vmax;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav .libtn:hover {
+   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+}
+
+.one main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    height: 90vh; 
+}
+
+.container1 {
+    width: 40vw;
+    text-align: center;
+    padding: 2vmax;
+    color: #fff;
+    font: 300 1vmax "Gilroy";
+}
+
+form {
+    background-color: rgb(230, 230, 230);
+    width: 60vw;
+    border-radius: .5vmax;
+}
+
+.heading {
+    border-top-left-radius: .5vmax;
+    border-top-right-radius: .5vmax;
+}
+
+.heading h1 {
+    font: 300 3vmax "Gilroy"
+}
+
+.heading > p {
+    font: 300 1vmax "Gilroy"
+}
+
+.two {
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+
+}
+
+.two h1 {
+    font: 300 3vmax "Gilroy";
+    border-left: .2vmax solid rgb(219, 219, 219);
+}
+
+.two > main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgb(230, 230, 230);
 }
