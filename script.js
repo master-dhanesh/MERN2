@@ -1,38 +1,35 @@
 const form = document.querySelector('form');
-const Cards = document.querySelector('.cards-container')
+const ul = document.querySelector('ul');
 
-const CardsArray = [];
+listItems = []
 
-AddCard(CardsArray);
-
-function AddCard(cards) {
-    Cards.innerHTML = '';
-    cards.forEach(function (card) {
-        Cards.innerHTML += `
-        <div class="card me-3" style="width: 15.5rem;">
-        <img src="${card.avatar}" class="card-img-top" alt="...">
-        <div class="card-body">
-        <p class="card-text">
-            ${card.name} <br>
-            ${card.contact} <br>
-            ${card.message}
-        </p>
-        </div>
-    </div>
-        `
+function addlist(alllist){
+    ul.innerHTML = "";
+    alllist.forEach(function(l,i){
+        ul.innerHTML +=  `<li>${l.name} - ${l.city} - <button onClick="removeEl(${i})">Remove</button></li>`
     })
 }
 
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const { name, contact, avatar, message } = e.target;
-    const newCard = {
-        name: name.value,
-        contact: contact.value,
-        avatar: avatar.value,
-        message: message.value
-    }
-    CardsArray.push(newCard);
+function removeEl(i){
+    listItems.splice(i, 1);
+    addlist(listItems);
+}
 
-    AddCard(CardsArray);
-})
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const { name, city } = e.target;
+    const newList = {
+        name: name.value,
+        city: city.value
+    };
+    
+    listItems.push(newList);
+    addlist(listItems);
+    name.value = "";
+    city.value = "";
+});
+
+
+function showDialog(){
+ alert("Hellooo?")
+}
