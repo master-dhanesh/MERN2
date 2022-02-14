@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'Gilroy' ;
+    src: url('fonts/Gilroy/GILROY-REGULAR.OTF');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gilroy' ;
+    src: url('fonts/Gilroy/GILROY-REGULAR.OTF');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Voyage' ;
+    src: url('fonts/Voyage/VOYAGE-REGULAR.TTF');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Voyage' ;
+    src: url('fonts/Voyage/VOYAGE-BOLD.TTF');
+    font-weight: 900;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,30 +31,143 @@
 
 html, body {
     width: 100%;
-    height: 150%;
+    min-height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: .5vmax;
+    /* background-color: red; */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(123, 124, 123);
+}
+
+.page1{
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    padding-top: 3vmax;
+    color: rgb(112, 112, 112);
 }
 
-.box {
-    width: 10vmax;
-    height: 10vmax;
+nav h2 {
+    font: 500 1.5vmax "Gilroy";
+    color: #8662D8;
 }
 
-.box1{
-    background-color: red;
+nav h3 {
+    margin-left: 1vmax;
+    font: 400 1vmax "Gilroy"
 }
 
-.box2{
-    background-color: green;
+nav h4 {
+    margin-left: 2vmax;
+    font: 600 .8vmax "Gilroy"
 }
 
-.box3{
-    background-color: pink;
+.circle {
+    width: 3vmax;
+    height: 3vmax;
+    border-radius: 50%;
+    background-color: rgb(112, 112, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
 }
 
-.box4{
-    background-color: blue;
+.circle > i {
+    color: #fff;
+}
+
+.circle:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+
+
+header {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+header > h1 {
+    font: 100 6vmax "Voyage";
+    letter-spacing: .5vmax;
+    transform: translateY(7vmax);
+}
+
+.headerimage {
+    width: 70vw;
+    height: 100vh;
+    background-image: url(./bgimage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+
+.headerimage span:first-child{
+    position: absolute;
+    left: 16vmax;
+    top: 15vmax;
+    font: 400 1.5vmax "Gilroy";
+}
+
+.headerimage span:last-child{
+    position: absolute;
+    right: 20vmax;
+    top: 30vmax;
+    font: 400 1.5vmax "Gilroy";
+}
+
+.headerimage i {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    transform: scale(3);
+    color: rgb(135, 136, 136);
+}
+@media screen and (max-width: 600px) {
+    
+    header > h1 {
+        font: lighter 8vmax "Voyage";
+    }
+
+    nav > div {
+        display: none;
+    }
+
+    .circle {
+        transform: scale(1.5);
+    }
+
+    .headerimage {
+        height: 78vh;
+    }
+
+    .headerimage span:first-child {
+        top: 26vmax;
+        left: 2vmax;
+    }
+
+    .headerimage span:last-child {
+        top: 45vmax;
+        right: 6vmax;
+    }
+
+    .headerimage i {
+        top: 55vh;
+    }
+
 }
