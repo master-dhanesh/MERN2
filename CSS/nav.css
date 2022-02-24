@@ -1,0 +1,56 @@
+.mobile-nav {
+    display: none;
+}
+
+nav {
+    margin: auto;
+    width: 90%;
+    height: 10vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-nav>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font: 500 1vmax "Gilroy";
+
+}
+
+.logo-img {
+    width: 10vmax;
+}
+
+.desktop-nav>ul>li {
+    padding: 0 2vmax;
+    color: rgb(136, 135, 135);
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.desktop-nav>ul>li:hover {
+    color: #000;
+}
+
+.get-app-btn {
+    padding: .7vmax 1vmax;
+    border: 1px solid black;
+    border-radius: .6vmax;
+    color: #000;
+}
+
+@media screen and (max-width: 600px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

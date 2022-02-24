@@ -1,3 +1,23 @@
+
+@font-face {
+    font-family: 'Gilroy' ;
+    src: url(./fonts/Gilroy/GILROY-MEDIUM.OTF);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gilroy' ;
+    src: url(./fonts/Gilroy/GILROY-REGULAR.OTF);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Gilroy' ;
+    src: url(./fonts/Gilroy/GILROY-LIGHT.OTF);
+    font-weight: 100;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,29 +25,9 @@
 }
 
 html, body {
-    width: 100vw;
-    height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
 }
 
-main {
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
-.box {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font: 900 3vmax "Bebas Neue";
-}
-
-.box1{ background-color: red; }
-.box2{ background-color: green; }
-.box3{ background-color: pink; }
-.box4{ background-color: blue; }
-.box5{ background-color: yellow; }
