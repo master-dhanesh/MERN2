@@ -1,0 +1,70 @@
+.page1 {
+    height: 90vh;
+    /* background-color: red; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page1-left {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.page1-right {
+    background-image: url(../graphics/g2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 100%;
+    transform: translate(5vmax,-5vmax) scale(1.2);
+
+}
+
+.suptitle, .subtitle
+{
+    font: 300 1vmax "Gilroy";
+    display: flex;
+    align-items: center;
+    color: rgb(114, 113, 113);
+    
+}
+
+.page1-left > h1 {
+    font: 700 5vmax "Gilroy";
+    line-height: 5vmax;
+}   
+
+.googleplay, .appstore {
+    width: 10vmax;
+}
+
+
+@media screen and (max-width: 600px) {
+    .page1 {
+        /* flex-direction: column;
+        align-items: center; */
+        height: 40vh;
+        position: relative;
+    }
+
+    .page1-left {
+         width: 100%;
+    }
+
+    .page1-right { 
+        opacity: .4;
+        z-index: -1;
+        position: absolute;
+        top: 10%;
+        bottom: 0;
+        transform: translate(6vmax,-5vmax) scale(1.4);
+        width: 100%;
+    }
+}

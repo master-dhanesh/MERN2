@@ -17,7 +17,7 @@ nav {
     display: flex;
     align-items: center;
     font: 500 1vmax "Gilroy";
-
+    height: 100%;
 }
 
 .logo-img {
@@ -29,6 +29,9 @@ nav {
     color: rgb(136, 135, 135);
     transition: .5s all;
     cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .desktop-nav>ul>li:hover {
@@ -36,11 +39,71 @@ nav {
 }
 
 .get-app-btn {
-    padding: .7vmax 1vmax;
+    height: 60% !important;
+    padding: 0 1vmax;
     border: 1px solid black;
     border-radius: .6vmax;
     color: #000;
+    
 }
+
+.menu-options {
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all .5s ease;
+}
+
+.nav-cross {
+    display: flex;
+    justify-content: flex-end;
+    height: 5vh;
+    padding: 3vmax 3vmax 0 0;
+}
+
+.nav-cross > i {
+    font-size: 4vmax;
+    color: #fff;
+}
+
+.nav-options {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.nav-options > li {
+    font: 500 2.5vmax "Gilroy" ;
+    margin: 2vmax 0;
+    color: rgb(235, 235, 235) ;
+    transition: all .5s;
+}
+
+.nav-options > li:hover {
+    color: #fff;
+}
+
+.nav-options > li:last-child {
+    border: none;
+    background-color: rgb(233, 232, 232);
+    color: #000;
+    padding: 1vmax;
+    border-radius: .5vmax;
+    transition: all .5s;
+}
+
+.nav-options > li:hover:last-child {
+    background-color: #fff;
+}
+
+
 
 @media screen and (max-width: 600px) {
     .desktop-nav {
