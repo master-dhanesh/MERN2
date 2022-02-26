@@ -22,6 +22,14 @@
     font-weight: 100;
 }
 
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: .5vmax;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(82, 78, 78);
+}
 
 *{
     margin: 0;
