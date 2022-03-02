@@ -1,4 +1,4 @@
-.page4{
+.page4 {
     width: 90%;
     /* padding: 1vmax 0; */
     margin: auto;
@@ -17,12 +17,12 @@
     width: 50vw;
 }
 
-.page4-content > h1 {
+.page4-content>h1 {
     font: 700 3vmax "Gilroy";
     margin-bottom: 2vmax;
 }
 
-.page4-content > p {
+.page4-content>p {
     font: 300 1vmax "Gilroy";
     color: rgb(104, 103, 103);
 }
@@ -32,7 +32,7 @@
     margin-top: 1vmax;
 }
 
-.page4-buttons > button {
+.page4-buttons>button {
     padding: .8vmax 1.5vmax;
     border-radius: 1vmax;
     font: 500 1vmax "Gilroy";
@@ -43,7 +43,7 @@
     align-items: center;
 }
 
-.page4-buttons > button > img {
+.page4-buttons>button>img {
     width: 2vmax;
 }
 
@@ -66,17 +66,17 @@
         width: 80%;
     }
 
-    .page4-content > h1 {
+    .page4-content>h1 {
         font: 700 3.5vmax "Gilroy";
     }
 
-    .page4-content > p {
+    .page4-content>p {
         font: 300 1.5vmax "Gilroy";
     }
 
-    .page4-buttons > button {
+    .page4-buttons>button {
         font: 500 1.5vmax "Gilroy";
     }
-    
+
 
 }
